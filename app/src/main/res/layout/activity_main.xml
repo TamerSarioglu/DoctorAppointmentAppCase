@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center_horizontal"
+        app:cardBackgroundColor="#F4F4F4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+           <!-- <androidx.appcompat.widget.SearchView
+                android:backgroundTint="@color/white"
+                android:id="@+id/searchViewKlinikAra"
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rounded_corner"
+                app:queryHint="Klinik Ara" />-->
+
+            <EditText
+                android:id="@+id/textViewKlinikAra"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/rounded_corner"
+                android:drawableStart="@drawable/search_icon"
+                android:drawablePadding="4dp"
+                android:hint="@string/klinik_ara"
+                android:padding="14dp"
+                android:textColor="#AEAEB4"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/rounded_corner"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <CheckBox
+                    android:id="@+id/checkBoxKadin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@android:color/darker_gray"
+                    android:text="@string/kad_n"
+                    android:textColor="#AEAEB4"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxErkek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@android:color/darker_gray"
+                    android:text="@string/erkek"
+                    android:textColor="#AEAEB4"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/doctorsRecyclerView"
+                android:layout_width="325dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/rounded_corner"
+                android:padding="8dp" />
+
+            <ImageView
+                android:id="@+id/imageViewKullaniciBulunamadi"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="150dp"
+                android:background="#FFFFFF"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_baseline_person_24" />
+
+            <TextView
+                android:id="@+id/textViewKullaniciBulunamadi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/kullan_c_bulunamad"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

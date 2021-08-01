@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorDetayActivity"
+    android:background="#F4F4F4">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/doctorDetayCardView"
+        android:layout_width="315dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageViewDoctorDetailPicture"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/textViewDoctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginTop="6dp"
+                android:text="TextView"
+                android:textColor="#6A6A77"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewDoctorDetailPicture"
+                app:layout_constraintStart_toStartOf="@+id/imageViewDoctorDetailPicture"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewDoctorDetailPicture" />
+
+            <TextView
+                android:id="@+id/textViewDoctorStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:text="TextView"
+                android:textColor="#FEAC02"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewDoctorDetailPicture"
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toStartOf="@+id/imageViewDoctorDetailPicture"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDoctorName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewRandevuAl"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_corner"
+        android:drawablePadding="4dp"
+        android:text="@string/randevu_al"
+        android:padding="16dp"
+        android:textColor="#1C8E5D"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/doctorDetayCardView"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/doctorDetayCardView"
+        app:layout_constraintTop_toBottomOf="@+id/doctorDetayCardView"
+        app:drawableEndCompat="@drawable/arrow_forward" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

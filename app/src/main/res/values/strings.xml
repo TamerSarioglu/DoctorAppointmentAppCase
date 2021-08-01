@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DoktorRandevuApp</string>
+    <string name="klinik_ara">Klinik Ara</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="randevu_al">Randevu Al</string>
+    <string name="kad_n">Kadın</string>
+    <string name="erkek">Erkek</string>
+    <string name="kullan_c_bulunamad">Kullanıcı Bulunamadı</string>
+</resources>
